@@ -8,6 +8,7 @@ kubectl get pods -n upskill-dev
 kubectl get statefulset,pvc,svc -n upskill-dev
 kubectl logs -n upskill-dev deploy/upskill-api
 kubectl logs -n upskill-dev job/upskill-api-migrate
+kubectl logs -n upskill-dev job/upskill-api-notify
 ```
 
 Drift test after DEV is healthy:

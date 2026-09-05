@@ -4,6 +4,7 @@ resources:
   - deployment.yaml
   - service.yaml
   - migration-job.yaml
+  - notify-job.yaml
   - hpa.yaml
   - pdb.yaml
   - networkpolicy.yaml
