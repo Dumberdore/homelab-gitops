@@ -6,7 +6,7 @@ resources:
 images:
   - name: ghcr.io/dumberdore/upskill-api
     newName: ghcr.io/dumberdore/upskill-api
-    newTag: sha-07bd79a
+    newTag: sha-a266724
 
 labels:
   - pairs:
