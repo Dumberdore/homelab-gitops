@@ -6,7 +6,7 @@ metadata:
 spec:
   description: Upskill reference platform applications
   sourceRepos:
-    - https://github.com/Dumberdore/homelab-gitops.git
+    - git@github.com:Dumberdore/homelab-gitops.git
   destinations:
     - namespace: argocd
       server: https://kubernetes.default.svc

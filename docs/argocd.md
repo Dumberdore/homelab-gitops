@@ -14,6 +14,8 @@ kubectl port-forward -n argocd svc/argocd-server 8080:443
 
 The repo currently uses explicit `Application` resources instead of `ApplicationSet`.
 
+Because `homelab-gitops` is private, Argo CD needs a read-only SSH deploy key registered as an Argo repository Secret. That Secret is created directly in the cluster and is not committed to Git.
+
 Reason:
 
 - There is one service, one database dependency, and three logical environments.
