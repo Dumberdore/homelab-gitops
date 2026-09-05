@@ -48,6 +48,7 @@ Docs:
 - `docs/argocd.md`
 - `docs/ci.md`
 - `docs/deployment.md`
+- `docs/governance.md`
 - `docs/secrets.md`
 - `docs/promotion.md`
 - `docs/operations.md`

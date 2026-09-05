@@ -1,0 +1,11 @@
+# Initial single-owner setup. Replace with app/platform teams as the reference grows.
+* @Dumberdore
+
+platform/ @Dumberdore
+argocd/ @Dumberdore
+apps/postgres/ @Dumberdore
+apps/upskill-api/base/ @Dumberdore
+apps/upskill-api/overlays/dev/ @Dumberdore
+apps/upskill-api/overlays/staging/ @Dumberdore
+apps/upskill-api/overlays/prod/ @Dumberdore
+.github/workflows/ @Dumberdore
