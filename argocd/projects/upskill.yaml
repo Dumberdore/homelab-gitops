@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: upskill
+  namespace: argocd
+spec:
+  description: Upskill reference platform applications
+  sourceRepos:
+    - https://github.com/Dumberdore/homelab-gitops.git
+  destinations:
+    - namespace: argocd
+      server: https://kubernetes.default.svc
+    - namespace: upskill-dev
+      server: https://kubernetes.default.svc
+    - namespace: upskill-staging
+      server: https://kubernetes.default.svc
+    - namespace: upskill-prod
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: ''
+      kind: Namespace
+  namespaceResourceWhitelist:
+    - group: '*'
+      kind: '*'

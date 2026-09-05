@@ -1,0 +1,19 @@
+namespace: upskill-dev
+
+resources:
+  - ../../base
+
+images:
+  - name: ghcr.io/dumberdore/upskill-api
+    newName: ghcr.io/dumberdore/upskill-api
+    newTag: sha-placeholder
+
+labels:
+  - pairs:
+      app.kubernetes.io/part-of: upskill
+      app.kubernetes.io/managed-by: argocd
+      environment: dev
+
+patches:
+  - path: configmap.patch.yaml
+  - path: deployment.patch.yaml

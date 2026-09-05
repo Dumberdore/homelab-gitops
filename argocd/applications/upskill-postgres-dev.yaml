@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: upskill-postgres-dev
+  namespace: argocd
+spec:
+  project: upskill
+  source:
+    repoURL: https://github.com/Dumberdore/homelab-gitops.git
+    targetRevision: main
+    path: apps/postgres/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: upskill-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - PruneLast=true

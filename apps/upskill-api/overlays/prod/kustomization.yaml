@@ -1,0 +1,20 @@
+namespace: upskill-prod
+
+resources:
+  - ../../base
+
+images:
+  - name: ghcr.io/dumberdore/upskill-api
+    newName: ghcr.io/dumberdore/upskill-api
+    newTag: sha-placeholder
+
+labels:
+  - pairs:
+      app.kubernetes.io/part-of: upskill
+      app.kubernetes.io/managed-by: argocd
+      environment: prod
+
+patches:
+  - path: configmap.patch.yaml
+  - path: deployment.patch.yaml
+  - path: hpa.patch.yaml

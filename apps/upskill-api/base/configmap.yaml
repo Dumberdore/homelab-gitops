@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: upskill-api-config
+data:
+  APP_NAME: upskill-api
+  ENVIRONMENT: dev

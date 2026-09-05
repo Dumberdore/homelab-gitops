@@ -1,0 +1,13 @@
+resources:
+  - serviceaccount.yaml
+  - configmap.yaml
+  - deployment.yaml
+  - service.yaml
+  - migration-job.yaml
+  - hpa.yaml
+  - pdb.yaml
+  - networkpolicy.yaml
+
+images:
+  - name: ghcr.io/dumberdore/upskill-api
+    newTag: sha-placeholder

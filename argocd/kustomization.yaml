@@ -1,0 +1,9 @@
+resources:
+  - projects/upskill.yaml
+  - applications/upskill-namespaces.yaml
+  - applications/upskill-postgres-dev.yaml
+  - applications/upskill-postgres-staging.yaml
+  - applications/upskill-postgres-prod.yaml
+  - applications/upskill-api-dev.yaml
+  - applications/upskill-api-staging.yaml
+  - applications/upskill-api-prod.yaml

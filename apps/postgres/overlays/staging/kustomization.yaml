@@ -1,0 +1,10 @@
+namespace: upskill-staging
+
+resources:
+  - ../../base
+
+labels:
+  - pairs:
+      app.kubernetes.io/part-of: upskill
+      app.kubernetes.io/managed-by: argocd
+      environment: staging
