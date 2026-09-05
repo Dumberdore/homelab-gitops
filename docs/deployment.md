@@ -19,6 +19,8 @@ sequenceDiagram
   Argo->>K8s: Roll out Deployment
 ```
 
+The app ServiceAccount is also created as an early PreSync prerequisite so migration Jobs can run without using the namespace default ServiceAccount.
+
 GitHub Actions never runs `kubectl` and never needs cluster credentials.
 
 PostgreSQL is deployed from this repo to emphasize that environment dependencies and app code are separate concerns.
