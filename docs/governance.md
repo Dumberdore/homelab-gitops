@@ -20,3 +20,19 @@ Current automation exception:
 Future improvement:
 
 - Replace the deploy key with a GitHub App or dedicated service account for stronger auditability and more precise bypass rules.
+
+Current repository controls:
+
+- Repository visibility is public.
+- `main` requires pull requests.
+- CODEOWNERS review is required.
+- The `kustomize` status check is required.
+- Force pushes and branch deletion are blocked.
+- The `upskill-api` release deploy key may bypass for DEV image-tag automation.
+- `@Dumberdore` may bypass only through pull requests for single-owner operability.
+
+GitHub Environments:
+
+- `dev`: unrestricted; used for automation-friendly development deployment.
+- `staging`: required reviewer is `@Dumberdore`.
+- `prod`: required reviewer is `@Dumberdore`.
